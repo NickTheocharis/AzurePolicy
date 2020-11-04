@@ -1,0 +1,318 @@
+{
+ "properties": {
+  "displayName": "Naming Convention",
+  "policyType": "Custom",
+  "metadata": {
+   "version": "16.1",
+   "createdBy": "b9e6c900-303f-478b-aee8-c1d4c6827296",
+   "createdOn": "2020-11-03T06:23:01.9247861Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "Environment": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Environment"
+    },
+    "allowedValues": [
+     "prod",
+     "test",
+     "nonprod"
+    ]
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Route Tables 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/fd875ad7-5532-4069-a4bc-e4b21f6fd294",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Virtual Network Subnet 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/f6c3046e-706d-421f-8786-caf2a0c3c2d4",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Local Network Gateway 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/e72ff202-45b5-49d5-a96e-f2db11e1e2cc",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion NSG 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/e6baf18d-83c5-4946-be22-335436d3be42",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion NIC 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/e42bbc1b-8e79-4d51-b12b-6e6657450b7a",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Azure Container Registry 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/cd65ce5a-f035-4baa-a82c-9692ebfd2426",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Key Vault 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/c18b03a1-6f75-492c-85b8-68f5033bf2cc",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Service Fabric Cluster16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/db64aba4-aa81-4ae2-a567-825cb0246b73",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Front Door 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/bbdec388-14e7-4593-a8ed-7ea2b8e2d6c9",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Sql Database 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/a3a192a2-221b-4d4f-9848-7a57a199258c",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Azure Container Instance 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/a22f1e19-f154-4dca-8a10-e398e8dbdb9b",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Virtual Machine Scale Set 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/88bfc062-9638-4af7-b1b6-8c776645b136",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Public IP address 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/7c26711e-a059-41e6-a5d0-b82de7069445",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Virtual Network Peering 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/7c26711e-a059-41e6-a5d0-b82de7069430",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Virtual Machine Availabily Sets 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/7a4d0b16-995d-4cc3-af88-a03c7a7a9b5d",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Application Security Group 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/799ced88-31ea-4d8d-8cfb-abb21f317fad",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Blueprints 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/7633c759-d06b-47d6-871a-6071b01532cc",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Sql Server 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/7429b8fd-abfa-43fa-a002-535c9f0ddce2",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Virtual Network 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/6dd83ef4-20a8-4c59-8e25-5fd0b3274851",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Data Disk 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/6dd83ef4-20a8-4c59-8e25-5fd0b3274844",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Virtual Network Gateway 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/5abad80d-db01-4b34-8471-b1f0e99edce9",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion OS Disk 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/55ea4b2b-3dc4-4a07-bef6-f3c585c26cc7",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Application Gateway 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/55e28d56-5990-481e-b735-3eb188bc2fc7",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion CDN Profiles 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/46e51ff0-2cec-43a3-b012-d045addb62cc",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion VM 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/3fe374e5-51bf-4f5b-bbd1-43d3b4e45b9a",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Load Balancer 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/2db2f8d4-3ac1-468b-893b-67da29766422",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Traffic Manager Profiles 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/2d71924b-012b-4315-9d41-bb22cdff3cb2",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Sql Managed Instance 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/103609a9-e976-416f-b55b-2b8b2a83a2cc",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Naming Convetion Storage Account 16.1_1",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policyDefinitions/063b5105-d5c9-493f-9b33-74659d0fa2cf",
+    "parameters": {
+     "Env": {
+      "value": "[parameters('Environment')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/RootMgmtGroupNT/providers/Microsoft.Authorization/policySetDefinitions/98a0cb0f00ba419a830018c1",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "98a0cb0f00ba419a830018c1"
+}
